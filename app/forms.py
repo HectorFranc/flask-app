@@ -13,5 +13,10 @@ class TodoForm(FlaskForm):
     description = StringField('Descripción', validators=[DataRequired()])
     submit = SubmitField('Enviar')
 
+
 class DeleteTodoForm(FlaskForm):
     submit = SubmitField('Borrar', validators=[DataRequired()])
+
+
+class UpdateTodoForm(FlaskForm):
+    submit = SubmitField('Actualizar', validators=[DataRequired()])
